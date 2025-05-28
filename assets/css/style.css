@@ -1,0 +1,214 @@
+/* Style de textes pour les titres */
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Regular.ttf") format("truetype");
+  src: url("../fonts/Lato-Black.ttf") format("truetype"),
+    url("../fonts/Lato-Bold.ttf") format("truetype"),
+    url("../fonts/Lato-Italic.ttf") format("truetype");
+}
+/* Style de textes pour les contenus */
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Regular.ttf") format("truetype");
+  src: url("../fonts/Raleway-Black.ttf") format("truetype"),
+    url("../fonts/Raleway-Bold.ttf") format("truetype"),
+    url("../fonts/Raleway-Italic.ttf") format("truetype");
+}
+
+/* Pour toute la page */
+html {
+  width: 1160px;
+  margin: auto;
+}
+body {  
+  margin: 0 100px;
+  background: #f5f5f5;
+  color: #333333;
+}
+
+/* Pour le header */
+header {
+  background: #17abb3;
+  color: #ffffff;
+  height: 250px;
+}
+header h1, header h2 {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+
+.Flex1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.Flexphoto {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.Flexphoto img {
+  width: 150px;
+  height: 150px;
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.Flexphoto a:hover {
+  cursor: zoom-in;
+} 
+
+.Flexentete {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+}
+.Flexentete img {
+  width: 20px;
+  height: 20px;
+  float: left;
+  padding: 0 10px;
+}
+
+h1,h2 {
+  margin: 15px ;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 5px ;
+}
+
+.Grid1 {
+  display: grid;
+  grid-template: 50% 50% / 50% 50%;
+  padding: 0 0 0 80px;
+  justify-content: center;
+  justify-self: center;
+}
+
+/* Pour le main */
+main {
+  background: #f5f5f5;
+}
+
+hr {
+  opacity: .7;
+}
+
+.Flex2 {
+  display: flex;
+  flex-direction: column ;   
+}
+#element-1 {
+  background: #e3e3e3;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: start;
+  align-content: center;
+}
+#element-2 {
+  background: #ffffff;  
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  align-content: center;
+}
+
+.Flex2 article {
+  margin: 10px 40px 10px 40px;
+}
+.Flex2 img {
+  width: 15px;
+  height: 15px;  
+}
+
+.Grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+.Grid2-2,
+.Grid2-4,
+.Grid2-6,
+.Grid2-8 {
+  justify-self: end;
+  align-self: center;
+}
+div.Grid2  h4 {
+  margin: 10px 0;  
+}
+
+
+#liste1 li,
+#liste2 li {
+  list-style-type: square;
+  color : #17abb3;
+}
+#liste1 span,
+#liste2 span {
+  color : #000000;
+}
+
+
+h3 {
+  font-family: "Lato", sans-serif;
+  color : #17abb3;
+}
+#Profil {
+  text-indent: 30px;
+  text-justify: auto;
+}
+
+
+.Flex3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;  
+  margin: 15px 0 ;
+  padding: 0 ;
+}
+h4.Flex3, .Flex3date {
+  display: flex;
+  width: 50%;
+  margin: 0 ;
+  padding: 0 ;
+}
+.Flex3date {
+  display: grid;
+  justify-content: end;
+  color : #17abb3;
+}
+.Flex3lieu {
+  font-style: italic;
+  margin: 0 ;
+  padding: 0 ;
+}
+
+div.Flex3:hover{
+  background: #e3e3e3;
+  border-left: 5px solid #17abb3;
+  padding: 0 0 0 5px ;
+}
+
+/* Pour le footer */
+footer {
+  font-style: italic;
+  background: #17abb3;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px; 
+}
+footer img {
+  width: 20px;
+  height: 20px;
+  padding: 10px 10px;
+}
+footer img:hover {
+  opacity: .7;
+}
